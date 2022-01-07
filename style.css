@@ -1,0 +1,200 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body{
+    background-size: cover;
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header .barraCima{
+    background-color: #171a21;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+    color: white;
+}
+
+header .logo{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+main .cabeca{  
+    border-radius: 10px 10px 0px 0px;
+    background-color: #2d3341;
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 5px 15px 5px 15px; 
+    display: flex;
+}
+
+main .cabeca .cabeca1{
+    width: 75%;
+    display:flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+main .cabeca .cabeca1 a{
+    margin-right: 20px;
+    text-decoration:none;
+    font-size: 16px ;
+    color:#66bcd3;   
+}
+
+main .cabeca .cabeca1 a:hover{
+    color:#fff;
+}
+
+main .cabeca .cabeca2{
+    width: 25%;
+    display: block;
+    text-align: center;
+}
+
+main .cabeca .cabeca2 .busca {
+    background-color: #5e677d;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    border-radius: 2em / 5em;
+  }
+
+::placeholder{
+    color: #c5c3c0;
+}
+
+main .container{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #171a21;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+main .linha_principal{
+    padding: 10px;
+    display: flex;
+}
+
+main .colunaUm{
+    width: 75%;
+    height: 410px;
+}
+
+main .colunaUm .imagemPrincipal{   
+    width: 95%;
+    height: 95%;
+    display: block;
+    margin-left: 2.5%;
+    margin-top: 1.25%;
+}
+
+main .colunaUm .overlay {
+    position: relative;
+    bottom: 384px;
+    left: 2.5%;
+    overflow: hidden;
+    width: 0px;
+    height: 95%;
+    transition: .5s ease;
+}
+
+main .colunaUm:hover .imagemPrincipal {
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+
+main .colunaUm:hover .overlay {
+    width: 30%;
+}
+
+main .colunaUm .overlay .descricao {
+    text-align: justify;
+    white-space: normal; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    left: 1%;  
+  }
+
+main .colunaUm .overlay .descricao p{
+    font-size: 14px;
+}
+
+main .colunaDois{
+    width: 25%;
+}
+
+main .colunaDois .trailer{
+    width: 95%;
+    height: 135px;
+    display: block;
+    margin-left: 2.5%;
+    margin-top: 4%;
+}
+
+main .linhaJogos{   
+    padding: 0px 10px 0px 10px;
+    display: flex;
+}
+
+main .colunaJogos{
+    width: 25%;
+    height: 380px;
+}
+
+main .colunaJogos .capa{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-top: 7.5%;
+    margin-left: 5%;
+}
+
+main .colunaJogos .overlay {
+    margin-top: 7.5%;
+    margin-left: 5%;
+    position: relative;
+    bottom: 356px;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: 90%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+main .colunaJogos:hover .overlay {
+    opacity: 1;
+  }
+
+main .colunaJogos:hover .capa {
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+  }
+
+main .colunaJogos .overlay .descricaoJogos{
+    white-space: normal;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    bottom: 2%;
+    right: 0%;
+    left: 2%;
+    display: flex;
+    align-items: flex-end;
+  }
